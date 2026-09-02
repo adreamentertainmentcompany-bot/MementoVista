@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs><linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="0.35"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.12"/>
+  </linearGradient>
+  <radialGradient id="phvign" cx="50%" cy="50%" r="72%">
+    <stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.4"/>
+  </radialGradient><filter id="shadow" x="-30%" y="-30%" width="180%" height="200%">
+  <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.3"/>
+</filter></defs>
+  <defs><linearGradient id="travel-wall" x1="0" y1="0" x2="1920" y2="1080">
+    <stop offset="0" stop-color="#242c36"/><stop offset="1" stop-color="#151a21"/>
+  </linearGradient></defs>
+    <rect x="0" y="0" width="1920" height="1080" fill="url(#travel-wall)"/>
+    
+  <g><rect x="60" y="70" width="780" height="440" rx="5.28" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="60" y="70" width="780" height="440" fill="#23282f" rx="3"/>
+<rect x="60" y="70" width="780" height="440" fill="none" rx="3" stroke="#10131a" stroke-width="2"/>
+<defs><linearGradient id="travel-g0" x1="78" y1="104" x2="822" y2="480">
+    <stop offset="0" stop-color="#cfe4f3"/><stop offset="1" stop-color="#8fbcd4"/>
+  </linearGradient></defs>
+<rect x="78" y="104" width="744" height="376" fill="url(#travel-g0)"/>
+<rect x="78" y="104" width="744" height="157.92" fill="#ffe3b0" /><rect x="211.92" y="216.8" width="476.16" height="75.2" fill="#ffe3b0aa" /><rect x="78" y="261.91999999999996" width="744" height="218.07999999999998" fill="#1f5f8b" /><rect x="78" y="261.91999999999996" width="744" height="7.5200000000000005" fill="#ffe3b0aa" /><rect x="211.92" y="329.6" width="476.16" height="7.5200000000000005" fill="#ffffff22" /><rect x="286.32000000000005" y="374.71999999999997" width="327.36" height="6.768" fill="#ffffff22" /><rect x="78" y="419.84" width="744" height="60.160000000000004" fill="#3e8ec2" /><path d="M78 419.84 Q450 404.8 822 419.84" fill="#ffffff" opacity="0.4"/>
+<rect x="78" y="104" width="744" height="376" fill="url(#sheen)" opacity="0.16"/>
+<rect x="78" y="104" width="744" height="376" fill="url(#phvign)" opacity="0.2"/>
+<rect x="74" y="82" width="194" height="26" fill="#fffdf4" rx="3"/>
+<text x="171" y="99" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="11" letter-spacing="1" fill="#23282f">WAVES AT GOLDEN HOUR</text>
+</g>
+<g><rect x="880" y="70" width="280" height="520" rx="6.24" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="880" y="70" width="280" height="520" fill="#15140f" rx="3"/>
+<circle cx="916.4" cy="106.4" r="5.2" fill="#050504" />
+<circle cx="1123.6" cy="106.4" r="5.2" fill="#050504" />
+<circle cx="916.4" cy="184.4" r="5.2" fill="#050504" />
+<circle cx="1123.6" cy="184.4" r="5.2" fill="#050504" />
+<circle cx="916.4" cy="262.4" r="5.2" fill="#050504" />
+<circle cx="1123.6" cy="262.4" r="5.2" fill="#050504" />
+<circle cx="916.4" cy="340.4" r="5.2" fill="#050504" />
+<circle cx="1123.6" cy="340.4" r="5.2" fill="#050504" />
+<circle cx="916.4" cy="418.4" r="5.2" fill="#050504" />
+<circle cx="1123.6" cy="418.4" r="5.2" fill="#050504" />
+<circle cx="916.4" cy="496.4" r="5.2" fill="#050504" />
+<circle cx="1123.6" cy="496.4" r="5.2" fill="#050504" />
+<defs><linearGradient id="travel-g1" x1="963.2" y1="101.2" x2="1076.8" y2="558.8000000000001">
+    <stop offset="0" stop-color="#cfe4f3"/><stop offset="1" stop-color="#8fbcd4"/>
+  </linearGradient></defs>
+<rect x="963.2" y="101.2" width="113.6" height="457.6" fill="url(#travel-g1)"/>
+<rect x="963.2" y="101.2" width="113.6" height="457.6" fill="#1f5f8bd9" /><rect x="963.2" y="293.392" width="113.6" height="265.408" fill="#ffb35c" /><rect x="970.0160000000001" y="265.936" width="10.223999999999998" height="173.888" fill="#1f5f8b" /><rect x="983.648" y="247.63199999999995" width="10.223999999999998" height="173.888" fill="#1f5f8b" /><rect x="997.2800000000001" y="229.32799999999997" width="10.223999999999998" height="173.888" fill="#1f5f8b" /><rect x="1013.1840000000001" y="256.78400000000005" width="10.223999999999998" height="173.888" fill="#1f5f8b" /><rect x="1026.816" y="238.48000000000013" width="10.223999999999998" height="173.888" fill="#1f5f8b" /><rect x="1042.72" y="265.936" width="10.223999999999998" height="173.888" fill="#1f5f8b" /><rect x="1058.624" y="220.17600000000004" width="10.223999999999998" height="173.888" fill="#1f5f8b" /><rect x="1068.848" y="206.44800000000012" width="10.223999999999998" height="173.888" fill="#1f5f8b" /><circle cx="981.3760000000001" cy="238.48000000000002" r="3" fill="#ffe3b0bb" /><circle cx="1004.0960000000001" cy="238.48000000000002" r="3" fill="#ffe3b0bb" /><circle cx="1026.816" cy="238.48000000000002" r="3" fill="#ffe3b0bb" /><circle cx="1049.536" cy="238.48000000000002" r="3" fill="#ffe3b0bb" /><circle cx="981.3760000000001" cy="293.392" r="3" fill="#ffe3b0bb" /><circle cx="1004.0960000000001" cy="293.392" r="3" fill="#ffe3b0bb" /><circle cx="1026.816" cy="293.392" r="3" fill="#ffe3b0bb" /><circle cx="1049.536" cy="293.392" r="3" fill="#ffe3b0bb" /><circle cx="981.3760000000001" cy="348.30400000000003" r="3" fill="#ffe3b0bb" /><circle cx="1054.08" cy="174.416" r="22.880000000000003" fill="#ffe3b088" />
+<rect x="963.2" y="101.2" width="113.6" height="457.6" fill="url(#sheen)" opacity="0.16"/>
+<rect x="963.2" y="101.2" width="113.6" height="457.6" fill="url(#phvign)" opacity="0.2"/>
+<rect x="963.2" y="430.672" width="113.6" height="128.12800000000001" fill="#000" opacity="0.36"/>
+<text x="1020" y="496.73600000000005" text-anchor="middle" font-family="'Courier New',monospace" font-style="normal" font-weight="bold" font-size="24" letter-spacing="1" fill="#f4ead6">THE CITY, LIT</text>
+</g>
+<g><rect x="1200" y="70" width="660" height="330" rx="4" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="1200" y="70" width="660" height="330" fill="#3a4350" rx="4"/>
+<rect x="1208" y="78" width="644" height="314" fill="none" stroke="#5e6b7e" stroke-width="2"/>
+<defs><linearGradient id="travel-g2" x1="1222" y1="92" x2="1838" y2="378">
+    <stop offset="0" stop-color="#cfe4f3"/><stop offset="1" stop-color="#8fbcd4"/>
+  </linearGradient></defs>
+<rect x="1222" y="92" width="616" height="286" fill="url(#travel-g2)"/>
+<rect x="1222" y="92" width="616" height="286" fill="url(#travel-g2)" /><path d="M1222 269.32 L1406.8 143.48 L1542.32 235 L1702.48 126.32 L1838 249.3 L1838 378 L1222 378 z" fill="#1f5f8b" /><path d="M1222 315.08000000000004 L1653.2 263.6 L1776.4 372.28 L1222 372.28 z" fill="#ffb35c" /><path d="M1480.72 372.28 L1517.68 269.32 L1560.8 372.28 z" fill="#3e8ec2" /><path d="M1283.6 349.40000000000003 l-18.48 -34.32 h43.120000000000005 l-18.48 -28.6 h43.120000000000005" fill="#b5654a" /><path d="M1345.2 349.40000000000003 l-18.48 -34.32 h43.120000000000005 l-18.48 -28.6 h43.120000000000005" fill="#b5654a" /><path d="M1751.76 349.40000000000003 l-18.48 -34.32 h43.120000000000005 l-18.48 -28.6 h43.120000000000005" fill="#b5654a" /><path d="M1801.04 349.40000000000003 l-18.48 -34.32 h43.120000000000005 l-18.48 -28.6 h43.120000000000005" fill="#b5654a" /><circle cx="1702.48" cy="120.6" r="8.58" fill="#ffe3b066" />
+<rect x="1222" y="92" width="616" height="286" fill="url(#sheen)" opacity="0.16"/>
+<rect x="1222" y="92" width="616" height="286" fill="url(#phvign)" opacity="0.2"/>
+<rect x="1222" y="303.64" width="616" height="74.36" fill="#000" opacity="0.3"/>
+<text x="1530" y="342.82" text-anchor="middle" font-family="'Courier New',monospace" font-style="normal" font-weight="bold" font-size="25" letter-spacing="0.6" fill="#f4ead6">TRAIL 07 — NO AGENDA</text>
+</g>
+<g><rect x="80" y="560" width="780" height="450" rx="5.4" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="80" y="560" width="780" height="450" fill="#15140f" rx="3"/>
+<circle cx="112.19999999999999" cy="592.2" r="4.6000000000000005" fill="#050504" />
+<circle cx="827.8" cy="592.2" r="4.6000000000000005" fill="#050504" />
+<circle cx="112.19999999999999" cy="661.2" r="4.6000000000000005" fill="#050504" />
+<circle cx="827.8" cy="661.2" r="4.6000000000000005" fill="#050504" />
+<circle cx="112.19999999999999" cy="730.2" r="4.6000000000000005" fill="#050504" />
+<circle cx="827.8" cy="730.2" r="4.6000000000000005" fill="#050504" />
+<circle cx="112.19999999999999" cy="799.2" r="4.6000000000000005" fill="#050504" />
+<circle cx="827.8" cy="799.2" r="4.6000000000000005" fill="#050504" />
+<circle cx="112.19999999999999" cy="868.2" r="4.6000000000000005" fill="#050504" />
+<circle cx="827.8" cy="868.2" r="4.6000000000000005" fill="#050504" />
+<circle cx="112.19999999999999" cy="937.2" r="4.6000000000000005" fill="#050504" />
+<circle cx="827.8" cy="937.2" r="4.6000000000000005" fill="#050504" />
+<defs><linearGradient id="travel-g3" x1="153.60000000000002" y1="587.6" x2="786.4" y2="982.4000000000001">
+    <stop offset="0" stop-color="#cfe4f3"/><stop offset="1" stop-color="#8fbcd4"/>
+  </linearGradient></defs>
+<rect x="153.60000000000002" y="587.6" width="632.8" height="394.8" fill="url(#travel-g3)"/>
+<rect x="153.60000000000002" y="587.6" width="632.8" height="197.4" fill="url(#travel-g3)" /><polygon points="153.60000000000002 785 330.784 658.664 470 785 533.28 666.5600000000001 609.2159999999999 785 786.4 713.936 786.4 785 z" fill="#1f5f8b" opacity="0.6"/><circle cx="470" cy="729.7280000000001" r="35.532" fill="#ffe3b088" /><rect x="153.60000000000002" y="785" width="632.8" height="197.4" fill="#ffb35c" /><path d="M242.192 785 L305.472 982.4000000000001" fill="#3e8ec2cc" /><path d="M685.1519999999999 785 L621.872 982.4000000000001" fill="#3e8ec2cc" /><rect x="463.672" y="785" width="12.655999999999999" height="197.4" fill="#ffe3b0" /><rect x="406.72" y="785" width="126.56" height="4.7376000000000005" fill="#ffe3b066" /><rect x="406.72" y="808.6880000000001" width="126.56" height="4.7376000000000005" fill="#ffe3b066" /><rect x="406.72" y="832.376" width="126.56" height="4.7376000000000005" fill="#ffe3b066" /><rect x="406.72" y="856.0640000000001" width="126.56" height="4.7376000000000005" fill="#ffe3b066" /><rect x="406.72" y="879.752" width="126.56" height="4.7376000000000005" fill="#ffe3b066" /><rect x="406.72" y="903.44" width="126.56" height="4.7376000000000005" fill="#ffe3b066" /><path d="M381.408 832.376 L470 848.1680000000001 L533.28 832.376 L533.28 935.0240000000001 L381.408 935.0240000000001 z" fill="#b5654a" /><circle cx="381.408" cy="832.376" r="7.896000000000001" fill="#3e8ec2" /><rect x="406.72" y="871.856" width="101.24799999999999" height="19.740000000000002" fill="#3e8ec2" />
+<rect x="153.60000000000002" y="587.6" width="632.8" height="394.8" fill="url(#sheen)" opacity="0.16"/>
+<rect x="153.60000000000002" y="587.6" width="632.8" height="394.8" fill="url(#phvign)" opacity="0.2"/>
+<rect x="153.60000000000002" y="871.8560000000001" width="632.8" height="110.54400000000001" fill="#000" opacity="0.36"/>
+<text x="470" y="929.128" text-anchor="middle" font-family="'Courier New',monospace" font-style="normal" font-weight="bold" font-size="24" letter-spacing="1" fill="#f4ead6">THE LONG WAY HOME</text>
+</g>
+<g><rect x="880" y="590" width="280" height="420" rx="5.04" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="880" y="590" width="280" height="420" fill="#23282f" rx="3"/>
+<rect x="880" y="590" width="280" height="420" fill="none" rx="3" stroke="#10131a" stroke-width="2"/>
+<defs><linearGradient id="travel-g4" x1="898" y1="624" x2="1142" y2="980">
+    <stop offset="0" stop-color="#cfe4f3"/><stop offset="1" stop-color="#8fbcd4"/>
+  </linearGradient></defs>
+<rect x="898" y="624" width="244" height="356" fill="url(#travel-g4)"/>
+<rect x="898" y="624" width="244" height="356" fill="#1f5f8b" /><rect x="898" y="802" width="244" height="178" fill="#ffb35c" /><rect x="917.52" y="766.4" width="24.400000000000002" height="71.2" fill="#1f5f8b" /><rect x="951.68" y="766.4" width="24.400000000000002" height="71.2" fill="#1f5f8b" /><rect x="990.72" y="737.92" width="24.400000000000002" height="71.2" fill="#1f5f8b" /><rect x="1029.76" y="759.28" width="24.400000000000002" height="71.2" fill="#1f5f8b" /><rect x="1068.8" y="780.6399999999999" width="24.400000000000002" height="71.2" fill="#1f5f8b" /><rect x="1107.84" y="752.16" width="24.400000000000002" height="71.2" fill="#1f5f8b" /><circle cx="927.28" cy="752.16" r="3" fill="#ffe3b0cc" /><circle cx="995.6" cy="752.16" r="3" fill="#ffe3b0cc" /><circle cx="1063.92" cy="752.16" r="3" fill="#ffe3b0cc" /><circle cx="927.28" cy="794.88" r="3" fill="#ffe3b0cc" /><circle cx="995.6" cy="794.88" r="3" fill="#ffe3b0cc" /><circle cx="1063.92" cy="794.88" r="3" fill="#ffe3b0cc" /><circle cx="1093.2" cy="666.72" r="14.24" fill="#ffe3b066" />
+<rect x="898" y="624" width="244" height="356" fill="url(#sheen)" opacity="0.16"/>
+<rect x="898" y="624" width="244" height="356" fill="url(#phvign)" opacity="0.2"/>
+<rect x="894" y="602" width="153" height="26" fill="#fffdf4" rx="3"/>
+<text x="970.5" y="619" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="11" letter-spacing="1" fill="#23282f">NEON AFTER DARK</text>
+<g><rect x="894" y="604" width="130" height="20" rx="10" fill="#0d0d0d" opacity="0.75"/>
+      <text x="959" y="618" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="11" letter-spacing="1" fill="#ffd9c9">● 0:06</text></g>
+</g>
+<g><rect x="1200" y="400" width="660" height="610" rx="7.32" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="1200" y="400" width="660" height="610" fill="#15140f" rx="3"/>
+<circle cx="1243.4" cy="443.4" r="6.2" fill="#050504" />
+<circle cx="1816.6" cy="443.4" r="6.2" fill="#050504" />
+<circle cx="1243.4" cy="536.4" r="6.2" fill="#050504" />
+<circle cx="1816.6" cy="536.4" r="6.2" fill="#050504" />
+<circle cx="1243.4" cy="629.4" r="6.2" fill="#050504" />
+<circle cx="1816.6" cy="629.4" r="6.2" fill="#050504" />
+<circle cx="1243.4" cy="722.4" r="6.2" fill="#050504" />
+<circle cx="1816.6" cy="722.4" r="6.2" fill="#050504" />
+<circle cx="1243.4" cy="815.4" r="6.2" fill="#050504" />
+<circle cx="1816.6" cy="815.4" r="6.2" fill="#050504" />
+<circle cx="1243.4" cy="908.4" r="6.2" fill="#050504" />
+<circle cx="1816.6" cy="908.4" r="6.2" fill="#050504" />
+<defs><linearGradient id="travel-g5" x1="1299.2" y1="437.2" x2="1760.8000000000002" y2="972.8">
+    <stop offset="0" stop-color="#cfe4f3"/><stop offset="1" stop-color="#8fbcd4"/>
+  </linearGradient></defs>
+<rect x="1299.2" y="437.2" width="461.6" height="535.6" fill="url(#travel-g5)"/>
+<rect x="1299.2" y="437.2" width="461.6" height="535.6" fill="#1f5f8b" /><path d="M1299.2 705 L1483.8400000000001 565.744 L1603.856 683.576 L1760.8000000000002 576.456 L1760.8000000000002 737.136 L1299.2 737.136 z" fill="#ffb35c" /><rect x="1299.2" y="715.712" width="461.6" height="257.088" fill="#1f5f8b" /><path d="M1299.2 737.136 L1483.8400000000001 640.7280000000001 L1603.856 726.424 L1760.8000000000002 662.152 L1760.8000000000002 758.56 L1299.2 758.56 z" fill="#3e8ec2" opacity="0.7"/><rect x="1299.2" y="790.696" width="461.6" height="182.104" fill="#3e8ec2cc" /><rect x="1354.592" y="733.9224" width="83.08800000000001" height="10.712000000000002" fill="#ffffff33" /><rect x="1373.056" y="738.2072000000001" width="83.08800000000001" height="10.712000000000002" fill="#ffffff33" /><rect x="1391.5200000000002" y="742.492" width="83.08800000000001" height="10.712000000000002" fill="#ffffff33" /><rect x="1409.9840000000002" y="746.7768000000001" width="83.08800000000001" height="10.712000000000002" fill="#ffffff33" /><circle cx="1530" cy="769.2719999999999" r="16.068" fill="#ffe3b0" />
+<rect x="1299.2" y="437.2" width="461.6" height="535.6" fill="url(#sheen)" opacity="0.16"/>
+<rect x="1299.2" y="437.2" width="461.6" height="535.6" fill="url(#phvign)" opacity="0.2"/>
+<rect x="1299.2" y="822.8319999999999" width="461.6" height="149.96800000000002" fill="#000" opacity="0.36"/>
+<text x="1530" y="899.8159999999999" text-anchor="middle" font-family="'Courier New',monospace" font-style="normal" font-weight="bold" font-size="24" letter-spacing="1" fill="#f4ead6">FJORD FOG, EARLY</text>
+</g>
+</svg>

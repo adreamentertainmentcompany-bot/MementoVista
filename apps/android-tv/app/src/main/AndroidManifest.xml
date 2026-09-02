@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Not required=true: keeps this installable/testable broadly, but
+         it's a TV-first app in practice (see docs/ARCHITECTURE.md). -->
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault">
+
+        <!-- Shown if the app is launched directly; also the Dream
+             picker's "Settings" destination (see momento_dream_info.xml). -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Full-screen in-app preview, launched from MainActivity's
+             "Preview" button — see PreviewActivity/WebEngineHost. -->
+        <activity
+            android:name=".PreviewActivity"
+            android:exported="false"
+            android:label="@string/app_name" />
+
+        <!-- The actual screensaver. Registered via the standard Daydream
+             intent-filter/meta-data pattern so it appears in the system's
+             Settings > Screen Saver picker. Ref:
+             https://developer.android.com/reference/android/service/dreams/DreamService -->
+        <service
+            android:name=".MomentoDreamService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DREAM_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.dream"
+                android:resource="@xml/momento_dream_info" />
+        </service>
+    </application>
+</manifest>

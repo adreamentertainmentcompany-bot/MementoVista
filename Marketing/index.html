@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momento — Your memories, moving together.</title>
+  <meta name="description"
+    content="The most beautiful way to display several personal videos together on your TV. Turn photos and short clips into a living, editorial motion wall for the biggest screen in the home. Now in private Google TV beta." />
+
+  <!-- Social / ASO-grade meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Momento — Your memories, moving together." />
+  <meta property="og:description"
+    content="Turn personal photos and short videos into a designed, editorial motion wall for your TV. Private Google TV beta now open." />
+  <meta property="og:image" content="posters/travel.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <svg style="display:none" aria-hidden="true">
+    <defs>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M7 3.5h10A1.5 1.5 0 0 1 18.5 5v14a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 19V5A1.5 1.5 0 0 1 7 3.5z M12 17.6h.01"/>
+      </symbol>
+      <symbol id="icon-tv" viewBox="0 0 24 24">
+        <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z M8.5 3.5 12 6l3.5-2.5"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Fixed, light header -->
+  <header class="site-header" data-animate>
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Momento home">
+        <span class="brand-dot"></span><span class="brand-name">Momento</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <a href="#how-it-works">How it works</a>
+        <a href="#demos">Demo walls</a>
+        <a href="#honesty">Fine print</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="#beta">Join the beta</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <p class="eyebrow" data-animate>Private Google TV beta · Now open</p>
+        <h1 class="hero-title" data-animate>
+          Your memories,<br />
+          <em id="typewriter"></em><span class="caret" aria-hidden="true"></span>
+        </h1>
+        <p class="hero-sub" data-animate>
+          Momento turns personal photos and short videos into beautifully designed
+          <strong>motion walls</strong> for the biggest screen in the home. Pair your phone,
+          choose your moments, and bring your TV to life.
+        </p>
+        <p class="hero-lede" data-animate>
+          Not a slideshow. Not a screensaver. The most beautiful way to display several
+          personal videos together on a television.
+        </p>
+        <div class="hero-cta" data-animate>
+          <a class="btn btn-primary btn-lg" href="#beta">Get early access</a>
+          <a class="btn btn-ghost btn-lg" href="#demos">Watch the demo walls <span class="arr">↓</span></a>
+        </div>
+        <p class="hero-fine" data-animate>
+          You provide 3–5 clips. We craft your wall by hand. Refundable deposit. No inflated promises.
+        </p>
+
+        <!-- Hero demo wall: a live-ish composition -->
+        <figure class="hero-stage" data-animate data-video-slot data-src-video="videos/family-demo.mp4" data-poster="posters/family.svg">
+          <div class="stage-shell">
+            <div class="stage-img">
+              <img src="posters/family.svg" alt="A Momento wall of a family's memories in a mosaic of framed photos and video" width="1920" height="1080" />
+            </div>
+            <span class="stage-badge">LIVE · never a slideshow</span>
+          </div>
+          <figcaption>Our <strong>Family</strong> demo wall — pairs of them are always moving.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ WEDGE / PROPOSITION ============ -->
+    <section class="section wedge" id="wedge">
+      <div class="wrap">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">The wedge</p>
+          <h2>Designed editorials, not a cheaper Frame TV</h2>
+        </div>
+        <div class="wedge-grid">
+          <div class="wedge-col" data-animate>
+            <h3 class="wedge-label">Momento is</h3>
+            <ul class="wedgelist is">
+              <li>Several personal videos composed together, beautifully, on one TV.</li>
+              <li>A design engine — editorial layouts your family actually enjoys watching.</li>
+              <li>Warm. Alive. Built for the biggest screen in the home.</li>
+            </ul>
+          </div>
+          <div class="wedge-col" data-animate>
+            <h3 class="wedge-label not">Momento is not</h3>
+            <ul class="wedgelist not">
+              <li>A general screensaver replacement.</li>
+              <li>A "cheaper Samsung Frame."</li>
+              <li>A photo-storage or slideshow app.</li>
+              <li>A stock-art gallery.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section how" id="how-it-works">
+      <div class="wrap">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps. One living wall.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step" data-animate>
+            <span class="step-num">01</span>
+            <svg class="step-icon"><use href="#icon-phone"/></svg>
+            <h3>Pair your phone</h3>
+            <p>Scan a QR code from the couch. No manual setup on the TV itself.</p>
+          </li>
+          <li class="step" data-animate>
+            <span class="step-num">02</span>
+            <svg class="step-icon"><use href="#icon-tv"/></svg>
+            <h3>Choose your moments</h3>
+            <p>Pick from your camera roll. Momento only ever shows what you approve.</p>
+          </li>
+          <li class="step" data-animate>
+            <span class="step-num">03</span>
+            <span class="step-icon step-icon-live" aria-hidden="true">◉</span>
+            <h3>Bring your TV to life</h3>
+            <p>Frames crossfade, pans drift, and short clips come alive around the wall.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ DEMO WALLS ============ -->
+    <section class="section demos" id="demos">
+      <div class="wrap">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Demo walls</p>
+          <h2>See what your memories could do</h2>
+          <p class="section-sub">Three realistic walls, rendered through the same engine that runs on your TV.</p>
+        </div>
+
+        <div class="demo" data-animate data-video-slot data-src-video="videos/family-demo.mp4" data-poster="posters/family.svg">
+          <div class="demo-stage stage-img">
+            <img src="posters/family.svg" alt="Family: kids playing, a birthday, grandparents" width="1920" height="1080" />
+            <span class="stage-badge">Family</span>
+          </div>
+          <div class="demo-copy">
+            <h3 class="demo-tag">Family</h3>
+            <p>Kids playing, a birthday, grandparents mid-laugh. The wall that shows up before you visit — the one Grandma checks every morning.</p>
+          </div>
+        </div>
+
+        <div class="demo" data-animate data-video-slot data-src-video="videos/pet-demo.mp4" data-poster="posters/pet.svg">
+          <div class="demo-stage stage-img">
+            <img src="posters/pet.svg" alt="Pet: a dog running, a cat sleeping, birds" width="1920" height="1080" />
+            <span class="stage-badge">Pet</span>
+          </div>
+          <div class="demo-copy">
+            <h3 class="demo-tag">Pet</h3>
+            <p>Zoomies at 4am and sunny-windowsill naps, forever in motion. Proof the wall loves your whole household.</p>
+          </div>
+        </div>
+
+        <div class="demo" data-animate data-video-slot data-src-video="videos/travel-demo.mp4" data-poster="posters/travel.svg">
+          <div class="demo-stage stage-img">
+            <img src="posters/travel.svg" alt="Travel: beach waves, a city walk, a mountain hike" width="1920" height="1080" />
+            <span class="stage-badge">Travel</span>
+          </div>
+          <div class="demo-copy">
+            <h3 class="demo-tag">Travel</h3>
+            <p>Waves at golden hour and the city at night — a gallery of every place you're glad you went.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE RITUAL ============ -->
+    <section class="section ritual" id="ritual">
+      <div class="wrap">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">What it's really for</p>
+          <h2>It's not storage. It's ritual.</h2>
+        </div>
+        <p class="ritual-lede" data-animate>
+          Momento gets more valuable as families build recurring rituals around sharing moments
+          across households.
+        </p>
+        <div class="ritual-cards">
+          <article class="ritual-card" data-animate>
+            <h3>Every morning</h3>
+            <p>Grandma checks the wall because she knows new family videos will be there.</p>
+          </article>
+          <article class="ritual-card" data-animate>
+            <h3>Sunday evening</h3>
+            <p>The family shares the week's clips, knowing they'll surface on the living-room wall.</p>
+          </article>
+          <article class="ritual-card" data-animate>
+            <h3>When guests visit</h3>
+            <p>Someone spots a frame they love, asks what it is — and the wall does the introductions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE GUEST LOOP ============ -->
+    <section class="section guestloop" id="guest-loop">
+      <div class="wrap guestloop-inner">
+        <div class="guestloop-copy" data-animate>
+          <p class="eyebrow">The loop</p>
+          <h2>Every wall carries Momento to the next household</h2>
+          <ol class="loop">
+            <li>You display a Momento wall on your TV.</li>
+            <li>A guest asks, <em>"What is that?"</em></li>
+            <li>They scan a QR code and drop in clips from their phone.</li>
+            <li>You approve. The wall updates.</li>
+            <li>They see <em>"Create this on your TV"</em> — and the loop closes.</li>
+          </ol>
+          <a class="btn btn-primary" href="#beta">Start your wall</a>
+        </div>
+        <div class="guestloop-visual" data-animate data-video-slot data-src-video="videos/travel-demo.mp4" data-poster="posters/travel.svg">
+          <img src="posters/travel.svg" alt="A travel wall, ready to be shared" width="1920" height="1080" />
+          <div class="qr-chip" aria-hidden="true">
+            <span class="qr-code"></span>
+            <span class="qr-label">scan · add yours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CREATIVE HOOKS ============ -->
+    <section class="section hooks" id="hooks">
+      <div class="wrap">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Coming soon</p>
+          <h2>Six ways you'll watch Momento</h2>
+          <p class="section-sub">We test every format. These are the six creative hooks we're validating.</p>
+        </div>
+        <div class="hooks-grid">
+          <a class="hook" href="#beta" data-animate>
+            <strong>Transformation</strong><span>Black TV → personal motion wall.</span>
+          </a>
+          <a class="hook" href="#beta" data-animate>
+            <strong>Affordable upgrade</strong><span>Ordinary TV → expensive-looking room.</span>
+          </a>
+          <a class="hook" href="#beta" data-animate>
+            <strong>Emotional swap</strong><span>Stock waterfall → your family, instead.</span>
+          </a>
+          <a class="hook" href="#beta" data-animate>
+            <strong>Built in real time</strong><span>Three clips → a finished editorial wall.</span>
+          </a>
+          <a class="hook" href="#beta" data-animate>
+            <strong>Comparison</strong><span>"I almost bought a new TV until…"</span>
+          </a>
+          <a class="hook" href="#beta" data-animate>
+            <strong>Guest loop</strong><span>Scan QR → party clips appear on the wall.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HONESTY / COMPETITIVE ============ -->
+    <section class="section honesty" id="honesty">
+      <div class="wrap">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Straight talk</p>
+          <h2>Where we stand, honestly</h2>
+          <p class="section-sub">
+            We're not here to claim we're winning a race. Here's exactly where Momento sits
+            in the ambient-display landscape right now.
+          </p>
+        </div>
+        <div class="table-scroll" data-animate>
+          <table class="compare">
+            <thead>
+              <tr>
+                <th>Capability</th>
+                <th class="hl">Momento</th>
+                <th>Google Ambient</th>
+                <th>Gallery Mode</th>
+                <th>WindowSight</th>
+                <th>Samsung Frame</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Primary content</th>
+                <td class="hl">Personal short videos</td>
+                <td>Personal photos &amp; video</td>
+                <td>Art &amp; personal media</td>
+                <td>Professional art &amp; photography</td>
+                <td>Art &amp; personal photos</td>
+              </tr>
+              <tr>
+                <th scope="row">Simultaneous video composition</th>
+                <td class="hl"><strong>Planned hero feature</strong></td>
+                <td>Not established</td>
+                <td>Must verify</td>
+                <td>Not established</td>
+                <td>Not established</td>
+              </tr>
+              <tr>
+                <th scope="row">Editorial motion templates</th>
+                <td class="hl"><strong>Planned specialization</strong></td>
+                <td>Dynamic slideshows</td>
+                <td>Collages &amp; frames</td>
+                <td>Art playlists</td>
+                <td>Art presentation</td>
+              </tr>
+              <tr>
+                <th scope="row">Phone workflow</th>
+                <td class="hl">QR curator planned</td>
+                <td>Google Photos config</td>
+                <td>Phone/PC upload</td>
+                <td>Phone &amp; TV apps</td>
+                <td>SmartThings ecosystem</td>
+              </tr>
+              <tr>
+                <th scope="row">Idle activation</th>
+                <td class="hl">Manual initially</td>
+                <td>Native</td>
+                <td>Device-dependent</td>
+                <td>Screensaver</td>
+                <td>Native hardware feature</td>
+              </tr>
+              <tr>
+                <th scope="row">Business model</th>
+                <td class="hl">$24.99 (hypothesis)</td>
+                <td>Included</td>
+                <td>Freemium</td>
+                <td>Free + supporter plans</td>
+                <td>Hardware + optional content</td>
+              </tr>
+              <tr>
+                <th scope="row">Key advantage</th>
+                <td class="hl">Personal motion design</td>
+                <td>Native integration</td>
+                <td>Breadth &amp; install base</td>
+                <td>Licensed art catalog</td>
+                <td>Integrated display hardware</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="honesty-note" data-animate>
+          The direct threat is Gallery Mode: it already has personal media, collages, and a large
+          install base. Momento's only hope is to be <strong>visually superior</strong> — a design
+          engine, not a media player. That's the bet. It's also the point.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ TRUST ============ -->
+    <section class="section trust" id="trust">
+      <div class="wrap">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Non-negotiable</p>
+          <h2>Your memories belong to you</h2>
+        </div>
+        <ul class="trust-grid">
+          <li data-animate>Export and deletion controls are visible and simple.</li>
+          <li data-animate>Backup is encouraged, never hidden.</li>
+          <li data-animate>Account recovery always exists.</li>
+          <li data-animate>Guest uploads require host approval.</li>
+          <li data-animate>Unapproved uploads expire automatically.</li>
+          <li data-animate>File limits and rate limiting are enforced.</li>
+          <li data-animate>Explicit consent for all shared content.</li>
+        </ul>
+        <p class="trust-line" data-animate>
+          Momento is never <em>"the only copy"</em> of your memories. It's a window into them.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ BETA SIGNUP ============ -->
+    <section class="section beta" id="beta">
+      <div class="wrap beta-inner">
+        <p class="eyebrow" data-animate>Private Google TV beta</p>
+        <h2 data-animate>Get early access</h2>
+        <p class="beta-sub" data-animate>
+          Tell us which TV you have. We'll hand-craft a preview wall from your clips and
+          check back with the people who matter: you.
+        </p>
+
+        <form class="beta-form" id="beta-form" data-animate novalidate>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="f-tv">What's your TV?</label>
+            <select id="f-tv" name="tv" required>
+              <option value="" disabled selected>Choose a device…</option>
+              <option value="gctv">Google TV (Chromecast / smart TV)</option>
+              <option value="androidtv">Android TV</option>
+              <option value="other">Something else / not sure</option>
+            </select>
+          </div>
+          <button class="btn btn-primary btn-lg" type="submit">Request early access</button>
+        </form>
+
+        <p class="beta-fine" data-animate id="beta-feedback" role="status" aria-live="polite">
+          Refundable deposit — try the concierge wall, keep it if you love it.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="brand">
+        <span class="brand-dot"></span><span class="brand-name">Momento</span>
+      </div>
+      <p class="footer-tag">Your memories, moving together.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#how-it-works">How it works</a>
+        <a href="#demos">Demo walls</a>
+        <a href="#trust">Privacy</a>
+        <a href="#honesty">Competitive</a>
+      </nav>
+      <p class="footer-legal">© <span id="year">2026</span> Momento · Concept in validation, pre-prototype. No inflated claims.</p>
+    </div>
+  </footer>
+
+  <noscript>
+    <style>.reveal-in,.step,.demo,.ritual-card{opacity:1 !important;transform:none !important}</style>
+  </noscript>
+</body>
+</html>

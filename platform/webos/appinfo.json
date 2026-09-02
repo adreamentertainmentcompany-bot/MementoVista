@@ -1,0 +1,19 @@
+{
+  "_comment": "webOS TV web app packaging manifest template for Momento. Starting point, not final — `ares-generate`/`ares-package` (webOS CLI) will scaffold/validate the real structure. Copy apps/tv-app/dist into a webOS project's content and merge the relevant fields below into the generated appinfo.json.",
+
+  "id": "com.momento.tv",
+  "version": "0.1.0",
+  "vendor": "Momento",
+  "type": "web",
+  "main": "index.html",
+  "title": "Momento",
+  "icon": "icon.png",
+  "largeIcon": "icon-large.png",
+
+  "_screensaverComment": "webOS has no public 'register as the system idle screensaver' hook — see docs/ARCHITECTURE.md §1. These two fields instead opt into LG's officially-documented 'Type 3 / Gallery' screensaver mode, which their own docs list 'a gallery app' as the intended use case for: it extends the (very short, a few minutes on OLED) idle timeout to 30 minutes and dims the whole screen gradually instead of a hard cutover. Ref: https://webostv.developer.lge.com/develop/guides/screensaver",
+  "screenSaverProperties": { "preferredType": 3 },
+  "useGalleryMode": true,
+
+  "_backButtonComment": "Only needed if you want a custom exit prompt instead of the platform default (History-API-driven back navigation, which needs no special config). See src/platform/webos.ts.",
+  "disableBackHistoryAPI": false
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="810" height="1440" viewBox="0 0 810 1440">
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#8a7ec9" />
+      <stop offset="100%" stop-color="#3f2f6e" />
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="noise" seed="7" />
+      <feColorMatrix in="noise" type="matrix"
+        values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="78%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.45" />
+    </linearGradient>
+  </defs>
+  <rect width="810" height="1440" fill="url(#bg)" />
+  <rect width="810" height="1440" filter="url(#grain)" />
+  <rect width="810" height="1440" fill="url(#vignette)" />
+  <text x="49" y="1339"
+        font-family="Georgia, 'Times New Roman', serif" font-size="36"
+        fill="#fff8ec" fill-opacity="0.92" style="letter-spacing:0.02em">
+    Countdown to forever
+  </text>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder app icon: a simple gold picture-frame glyph, matching the
+     "gold-ornate" frame style in apps/tv-app. Vector so no raster asset
+     generation is needed; replace with real branded artwork before any
+     store submission. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#211F1B"
+        android:pathData="M0,0 h108 v108 h-108 z" />
+    <path
+        android:fillColor="#E8C974"
+        android:pathData="M26,22 h56 v56 h-56 z" />
+    <path
+        android:fillColor="#211F1B"
+        android:pathData="M34,30 h40 v40 h-40 z" />
+    <path
+        android:fillColor="#F2A65A"
+        android:pathData="M42,56 l10,-14 l8,10 l6,-6 l8,10 v6 h-32 z" />
+    <path
+        android:fillColor="#F6D98A"
+        android:pathData="M56,40 m-5,0 a5,5 0 1 0 10,0 a5,5 0 1 0 -10,0" />
+</vector>

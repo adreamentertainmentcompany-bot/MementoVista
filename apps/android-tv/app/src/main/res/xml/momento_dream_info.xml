@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Additional Daydream metadata. `settingsActivity` puts a "Settings"
+  button next to Momento in the system's Screen Saver picker, which opens
+  MainActivity.
+  Ref: https://developer.android.com/reference/android/service/dreams/DreamService
+-->
+<dream xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.momento.tv/.MainActivity" />

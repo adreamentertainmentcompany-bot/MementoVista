@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs><linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="0.35"/><stop offset="0.5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.12"/>
+  </linearGradient>
+  <radialGradient id="phvign" cx="50%" cy="50%" r="72%">
+    <stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.4"/>
+  </radialGradient><filter id="shadow" x="-30%" y="-30%" width="180%" height="200%">
+  <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.3"/>
+</filter></defs>
+  <defs><linearGradient id="pet-wall" x1="0" y1="0" x2="1920" y2="1080">
+    <stop offset="0" stop-color="#eef2d7"/><stop offset="1" stop-color="#d8e7bf"/>
+  </linearGradient><pattern id="pet-pat" width="110" height="110" patternUnits="userSpaceOnUse">
+      <g fill="#6d9a5f" opacity="0.07">
+        <circle cx="55" cy="55" r="10"/>
+        <circle cx="43" cy="41" r="3.6"/><circle cx="55" cy="38" r="3.6"/><circle cx="67" cy="41" r="3.6"/>
+      </g></pattern></defs>
+    <rect x="0" y="0" width="1920" height="1080" fill="url(#pet-wall)"/>
+    <rect x="0" y="0" width="1920" height="1080" fill="url(#pet-pat)"/>
+  <g transform="rotate(-3 240 315)"><rect x="90" y="130" width="300" height="370" rx="4.44" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="90" y="130" width="300" height="412" fill="#f9f3e9" rx="4"/>
+<defs><linearGradient id="pet-g0" x1="104" y1="144" x2="376" y2="486">
+    <stop offset="0" stop-color="#d6f4ff"/><stop offset="1" stop-color="#a9dfeb"/>
+  </linearGradient></defs>
+<rect x="104" y="144" width="272" height="342" fill="url(#pet-g0)"/>
+<rect x="104" y="144" width="272" height="212.04" fill="url(#pet-g0)" /><rect x="104" y="356.03999999999996" width="272" height="129.96" fill="#74c0fc" /><path d="M180.16000000000003 287.64 q16.32 -47.88 38.080000000000005 -13.68 q8.16 54.72 -16.32 68.4 q-16.32 -6.84 -21.76 -54.72 z" fill="#e76f51" /><circle cx="218.24" cy="267.12" r="6.84" fill="#333" /><path d="M294.4 328.68 h21.76" fill="#f4a26188" stroke-width="2.736" stroke-linecap="round"/><path d="M348.8 356.03999999999996 h21.76" fill="#f4a26188" stroke-width="2.736" stroke-linecap="round"/><path d="M403.20000000000005 383.4 h21.76" fill="#f4a26188" stroke-width="2.736" stroke-linecap="round"/><circle cx="245.44" cy="294.48" r="20.52" fill="#f4a261" />
+<rect x="104" y="144" width="272" height="342" fill="url(#sheen)" opacity="0.16"/>
+<rect x="104" y="144" width="272" height="342" fill="url(#phvign)" opacity="0.2"/>
+<text x="240" y="522" text-anchor="middle" font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive" font-style="italic" font-weight="normal" font-size="17" letter-spacing="0.2" fill="#4a443a">zoomies at sonic speed</text>
+</g>
+<g transform="rotate(2 570 250)"><rect x="430" y="70" width="280" height="360" rx="4.32" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="430" y="70" width="280" height="402" fill="#f9f3e9" rx="4"/>
+<defs><linearGradient id="pet-g1" x1="444" y1="84" x2="696" y2="416">
+    <stop offset="0" stop-color="#d6f4ff"/><stop offset="1" stop-color="#a9dfeb"/>
+  </linearGradient></defs>
+<rect x="444" y="84" width="252" height="332" fill="url(#pet-g1)"/>
+<rect x="444" y="84" width="252" height="332" fill="#2a9d8f" /><circle cx="650.64" cy="143.76" r="23.240000000000002" fill="#f3f0e6" /><rect x="474.24" y="150.4" width="191.52" height="152.72" fill="#6d597a" rx="13.280000000000001"/><circle cx="529.6800000000001" cy="289.84000000000003" r="46.480000000000004" fill="#e76f51" /><polygon points="529.6800000000001,329.68 519.6,356.24 539.76,336.32" fill="#e76f51" /><polygon points="570,329.68 562.44,359.56 585.12,339.64" fill="#e76f51" /><circle cx="519.6" cy="250" r="2.656" fill="#74c0fc" />
+<rect x="444" y="84" width="252" height="332" fill="url(#sheen)" opacity="0.16"/>
+<rect x="444" y="84" width="252" height="332" fill="url(#phvign)" opacity="0.2"/>
+<text x="570" y="452" text-anchor="middle" font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive" font-style="italic" font-weight="normal" font-size="13.8" letter-spacing="0.2" fill="#4a443a">windowsill rights, respected</text>
+</g>
+<g transform="rotate(-1 975 300)"><rect x="760" y="150" width="430" height="300" rx="4" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="760" y="150" width="430" height="300" fill="#4a2f1a" rx="6"/>
+<rect x="772" y="162" width="406" height="276" fill="none" stroke="#7a5a34" stroke-width="4"/>
+<defs><linearGradient id="pet-g2" x1="794" y1="184" x2="1156" y2="416">
+    <stop offset="0" stop-color="#d6f4ff"/><stop offset="1" stop-color="#a9dfeb"/>
+  </linearGradient></defs>
+<rect x="794" y="184" width="362" height="232" fill="url(#pet-g2)"/>
+<rect x="794" y="184" width="362" height="139.2" fill="url(#pet-g2)" /><rect x="794" y="323.2" width="362" height="92.80000000000001" fill="#2a9d8f" /><polygon points="902.6,225.76 888.12,218.8 902.6,223.44" fill="#c77dff" /><polygon points="902.6,225.76 917.08,218.8 902.6,223.44" fill="#c77dff" /><polygon points="993.1,248.96 978.62,242 993.1,246.64" fill="#c77dff" /><polygon points="993.1,248.96 1007.58,242 993.1,246.64" fill="#c77dff" /><polygon points="1083.6,272.15999999999997 1069.12,265.2 1083.6,269.84000000000003" fill="#c77dff" /><polygon points="1083.6,272.15999999999997 1098.08,265.2 1083.6,269.84000000000003" fill="#c77dff" /><circle cx="975" cy="351.03999999999996" r="13.92" fill="#f4a261" /><rect x="905.4" y="347.56" width="139.2" height="2.7840000000000003" fill="#ffffffaa" /><path d="M866.4 404.4 L1083.6 404.4 L1119.8 416 L830.2 416 z" fill="#e76f51" opacity="0.5"/>
+<rect x="794" y="184" width="362" height="232" fill="url(#sheen)" opacity="0.16"/>
+<rect x="794" y="184" width="362" height="232" fill="url(#phvign)" opacity="0.2"/>
+<rect x="794" y="351.03999999999996" width="362" height="64.96000000000001" fill="#000" opacity="0.3"/>
+<text x="975" y="385.52" text-anchor="middle" font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive" font-style="italic" font-weight="normal" font-size="17.4" letter-spacing="0.4" fill="#3d3d2a">a leaf? a bird? RACING to find out</text>
+</g>
+<g transform="rotate(3 1380 245)"><rect x="1230" y="60" width="300" height="370" rx="4.44" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="1230" y="60" width="300" height="412" fill="#f9f3e9" rx="4"/>
+<defs><linearGradient id="pet-g3" x1="1244" y1="74" x2="1516" y2="416">
+    <stop offset="0" stop-color="#d6f4ff"/><stop offset="1" stop-color="#a9dfeb"/>
+  </linearGradient></defs>
+<rect x="1244" y="74" width="272" height="342" fill="url(#pet-g3)"/>
+<rect x="1244" y="74" width="272" height="342" fill="#ffd166" /><path d="M1407.2 176.6 C1488.8 142.4 1434.4 347.6 1358.24 313.4" stroke="#c77dff" stroke-width="6.84" fill="none" stroke-linecap="round" /><circle cx="1358.24" cy="313.4" r="17.1" fill="#e76f51" /><circle cx="1352.8" cy="289.46000000000004" r="10.26" fill="#74c0fc" /><circle cx="1439.84" cy="183.44" r="6.84" fill="#ffffff66" /><circle cx="1396.32" cy="224.48" r="9.576" fill="#ffffff66" /><circle cx="1472.48" cy="265.52" r="6.84" fill="#ffffff66" /><circle cx="1380" cy="306.55999999999995" r="9.576" fill="#ffffff66" /><circle cx="1325.6" cy="347.6" r="6.84" fill="#ffffff66" /><path d="M1271.2 364.7 q81.6 -41.04 217.60000000000002 -6.84" stroke="#c77dff" stroke-width="2.736" fill="none" stroke-linecap="round" opacity="0.5" />
+<rect x="1244" y="74" width="272" height="342" fill="url(#sheen)" opacity="0.16"/>
+<rect x="1244" y="74" width="272" height="342" fill="url(#phvign)" opacity="0.2"/>
+<text x="1380" y="452" text-anchor="middle" font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive" font-style="italic" font-weight="normal" font-size="14.8" letter-spacing="0.2" fill="#4a443a">couch to curtain, new record</text>
+</g>
+<g><rect x="120" y="600" width="560" height="280" rx="4" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="120" y="600" width="560" height="280" fill="#15140f" rx="3"/>
+<circle cx="139.6" cy="619.6" r="2.8000000000000003" fill="#050504" />
+<circle cx="660.4" cy="619.6" r="2.8000000000000003" fill="#050504" />
+<circle cx="139.6" cy="661.6" r="2.8000000000000003" fill="#050504" />
+<circle cx="660.4" cy="661.6" r="2.8000000000000003" fill="#050504" />
+<circle cx="139.6" cy="703.6" r="2.8000000000000003" fill="#050504" />
+<circle cx="660.4" cy="703.6" r="2.8000000000000003" fill="#050504" />
+<circle cx="139.6" cy="745.6" r="2.8000000000000003" fill="#050504" />
+<circle cx="660.4" cy="745.6" r="2.8000000000000003" fill="#050504" />
+<circle cx="139.6" cy="787.6" r="2.8000000000000003" fill="#050504" />
+<circle cx="660.4" cy="787.6" r="2.8000000000000003" fill="#050504" />
+<circle cx="139.6" cy="829.6" r="2.8000000000000003" fill="#050504" />
+<circle cx="660.4" cy="829.6" r="2.8000000000000003" fill="#050504" />
+<defs><linearGradient id="pet-g4" x1="164.8" y1="616.8" x2="635.2" y2="863.1999999999999">
+    <stop offset="0" stop-color="#d6f4ff"/><stop offset="1" stop-color="#a9dfeb"/>
+  </linearGradient></defs>
+<rect x="164.8" y="616.8" width="470.4" height="246.4" fill="url(#pet-g4)"/>
+<rect x="164.8" y="616.8" width="470.4" height="135.52" fill="url(#pet-g4)" /><rect x="164.8" y="752.3199999999999" width="470.4" height="110.88000000000001" fill="#74c0fc" /><circle cx="249.472" cy="740" r="12.32" fill="#e76f51" /><circle cx="235.36" cy="725.2159999999999" r="6.16" fill="#c77dff" /><path d="M258.88 700.576 Q400 641.4399999999999 550.528 690.7199999999999" stroke="#c77dff" stroke-width="4.928" fill="none" stroke-dasharray="14.783999999999999 9.856" stroke-linecap="round" /><rect x="550.528" y="690.7199999999999" width="17.248" height="7.3919999999999995" fill="#f4a261" /><path d="M211.84 848.4159999999999 L352.96000000000004 848.4159999999999 L305.91999999999996 808.992 z" fill="#c77dff" opacity="0.6"/><path d="M588.1600000000001 853.3439999999999 L447.03999999999996 853.3439999999999 L494.08 818.848 z" fill="#c77dff" opacity="0.6"/>
+<rect x="164.8" y="616.8" width="470.4" height="246.4" fill="url(#sheen)" opacity="0.16"/>
+<rect x="164.8" y="616.8" width="470.4" height="246.4" fill="url(#phvign)" opacity="0.2"/>
+<rect x="164.8" y="794.208" width="470.4" height="68.992" fill="#000" opacity="0.36"/>
+<text x="400" y="830.704" text-anchor="middle" font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive" font-style="italic" font-weight="normal" font-size="24" letter-spacing="1" fill="#3d3d2a">he has strong opinions on fetch</text>
+<g><rect x="134" y="614" width="130" height="20" rx="10" fill="#0d0d0d" opacity="0.75"/>
+      <text x="199" y="628" text-anchor="middle" font-family="'Courier New',monospace" font-weight="bold" font-size="11" letter-spacing="1" fill="#ffd9c9">● 0:12</text></g>
+</g>
+<g transform="rotate(-2 880 700)"><rect x="720" y="500" width="320" height="400" rx="4.8" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="720" y="500" width="320" height="442" fill="#f9f3e9" rx="4"/>
+<defs><linearGradient id="pet-g5" x1="734" y1="514" x2="1026" y2="886">
+    <stop offset="0" stop-color="#d6f4ff"/><stop offset="1" stop-color="#a9dfeb"/>
+  </linearGradient></defs>
+<rect x="734" y="514" width="292" height="372" fill="url(#pet-g5)"/>
+<rect x="734" y="514" width="292" height="372" fill="#6d597a" /><path d="M734 781.8399999999999 L1026 737.2 L1026 886 L734 886 z" fill="#74c0fc" /><path d="M734 759.52 L1026 714.88 L1026 804.1600000000001 L734 848.8 z" fill="#ffd166" /><polygon points="885.84,759.52 938.4,700 880,707.44" fill="#e76f51cc" /><circle cx="821.6" cy="625.6" r="18.6" fill="#f4a261" /><rect x="792.4" y="625.6" width="58.400000000000006" height="7.44" fill="#f4a261" />
+<rect x="734" y="514" width="292" height="372" fill="url(#sheen)" opacity="0.16"/>
+<rect x="734" y="514" width="292" height="372" fill="url(#phvign)" opacity="0.2"/>
+<text x="880" y="922" text-anchor="middle" font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive" font-style="italic" font-weight="normal" font-size="17" letter-spacing="0.2" fill="#4a443a">officially a heating pad</text>
+</g>
+<g transform="rotate(2 1230 675)"><rect x="1080" y="480" width="300" height="390" rx="4.68" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="1080" y="480" width="300" height="432" fill="#f9f3e9" rx="4"/>
+<defs><linearGradient id="pet-g6" x1="1094" y1="494" x2="1366" y2="856">
+    <stop offset="0" stop-color="#d6f4ff"/><stop offset="1" stop-color="#a9dfeb"/>
+  </linearGradient></defs>
+<rect x="1094" y="494" width="272" height="362" fill="url(#pet-g6)"/>
+<rect x="1094" y="494" width="272" height="362" fill="#f6e9c7" /><rect x="1164.72" y="494" width="130.56" height="362" fill="#2a9d8f" /><circle cx="1230" cy="559.16" r="43.44" fill="#f4a261" /><path d="M1164.72 848.76 L1153.84 790.8399999999999 L1186.48 798.0799999999999 z" fill="#ffd166" /><circle cx="1230" cy="819.8" r="43.44" fill="#e76f51" /><polygon points="1213.68,819.8 1202.8,852.38 1227.28,837.9" fill="#e76f51" /><circle cx="1257.2" cy="827.04" r="7.9639999999999995" fill="#74c0fc" />
+<rect x="1094" y="494" width="272" height="362" fill="url(#sheen)" opacity="0.16"/>
+<rect x="1094" y="494" width="272" height="362" fill="url(#phvign)" opacity="0.2"/>
+<text x="1230" y="892" text-anchor="middle" font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive" font-style="italic" font-weight="normal" font-size="17" letter-spacing="0.2" fill="#4a443a">the good morning spot</text>
+</g>
+<g><rect x="1440" y="540" width="460" height="300" rx="4" fill="#000" opacity="0.16" filter="url(#shadow)"/>
+<rect x="1440" y="540" width="460" height="300" fill="#4a2f1a" rx="6"/>
+<rect x="1452" y="552" width="436" height="276" fill="none" stroke="#7a5a34" stroke-width="4"/>
+<defs><linearGradient id="pet-g7" x1="1474" y1="574" x2="1866" y2="806">
+    <stop offset="0" stop-color="#d6f4ff"/><stop offset="1" stop-color="#a9dfeb"/>
+  </linearGradient></defs>
+<rect x="1474" y="574" width="392" height="232" fill="url(#pet-g7)"/>
+<rect x="1474" y="574" width="392" height="139.2" fill="url(#pet-g7)" /><rect x="1474" y="713.2" width="392" height="92.80000000000001" fill="#74c0fc" /><circle cx="1709.2" cy="690" r="13.92" fill="#e76f51" /><circle cx="1701.36" cy="673.76" r="6.96" fill="#c77dff" /><polygon points="1717.04,671.44 1748.4,676.08 1709.2,690" fill="#e76f51" /><circle cx="1591.6" cy="690" r="4.175999999999999" fill="#c77dff" /><circle cx="1552.4" cy="690" r="2.7840000000000003" fill="#f4a261" /><circle cx="1575.92" cy="690" r="2.7840000000000003" fill="#f4a261" /><circle cx="1607.28" cy="690" r="2.7840000000000003" fill="#f4a261" /><path d="M1756.24 638.96 q39.2 -18.56 31.36 23.200000000000003" stroke="#f4a26188" stroke-width="2.32" fill="none" stroke-linecap="round" /><circle cx="1787.6" cy="629.68" r="11.600000000000001" fill="#f4a26199" />
+<rect x="1474" y="574" width="392" height="232" fill="url(#sheen)" opacity="0.16"/>
+<rect x="1474" y="574" width="392" height="232" fill="url(#phvign)" opacity="0.2"/>
+<rect x="1474" y="741.04" width="392" height="64.96000000000001" fill="#000" opacity="0.3"/>
+<text x="1670" y="775.52" text-anchor="middle" font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive" font-style="italic" font-weight="normal" font-size="18.1" letter-spacing="0.4" fill="#3d3d2a">crime spree · solved · crumbs found</text>
+</g>
+</svg>

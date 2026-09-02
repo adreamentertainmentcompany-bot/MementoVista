@@ -1,0 +1,111 @@
+/* Wall-level chrome: full-bleed canvas, ambient background, mosaic grid,
+   and dev-only HUD/overlay elements. Frame-specific visuals live in
+   frames.css. Designed for a 1920x1080 TV canvas but scales to any
+   viewport for browser-based development. */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a0908;
+  overflow: hidden;
+  cursor: none;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wall__background {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255, 244, 224, 0.06), transparent 60%),
+    linear-gradient(160deg, #2c2925 0%, #1c1a17 55%, #100f0d 100%);
+}
+
+.wall__grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  gap: clamp(14px, 1.6vw, 30px);
+  padding: clamp(24px, 3.4vw, 68px);
+}
+
+/* --- Debug HUD (docs/ARCHITECTURE.md §5.5) --------------------------- */
+.debug-hud {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 10;
+  padding: 6px 12px;
+  font-family: "SF Mono", "Menlo", monospace;
+  font-size: 13px;
+  color: #d8f5c8;
+  background: rgba(10, 12, 8, 0.65);
+  border: 1px solid rgba(190, 255, 170, 0.25);
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+
+/* --- Exit overlay (screensaver dismissal, docs/ARCHITECTURE.md §5.6) - */
+#exit-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 5, 5, 0.82);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+#exit-overlay.is-visible {
+  opacity: 1;
+}
+
+.exit-overlay__card {
+  max-width: 560px;
+  text-align: center;
+  color: #f4efe6;
+  padding: 0 24px;
+}
+
+.exit-overlay__title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.exit-overlay__subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #cfc7b8;
+}
+
+/* --- Misc dev chrome --------------------------------------------------- */
+#chrome-badges {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  z-index: 10;
+  font-family: "SF Mono", "Menlo", monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+}

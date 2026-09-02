@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env
+.env.local
+
+# Android
+apps/android-tv/.gradle/
+apps/android-tv/build/
+apps/android-tv/app/build/
+apps/android-tv/local.properties
+apps/android-tv/app/src/main/assets/web/
+*.apk
+*.aab

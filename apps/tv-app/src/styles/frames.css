@@ -1,0 +1,239 @@
+/* Picture-frame system (docs/ARCHITECTURE.md §5.3/§5.4).
+   `.frame` is one mosaic slot. `.frame-style--*` variants approximate
+   distinct physical frame materials using layered CSS (gradients/insets/
+   shadows) so the "unique picture frames" concept is provable without
+   commissioning real texture art — swapping these for real PNG/WebP frame
+   assets later only touches this file. */
+
+.frame {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  /* Frames render at their *true* selected size (frameSizes.ts) — e.g. a
+     9:16 frame is genuinely tall/narrow, not stretched to fill its grid
+     cell — so this is a centering container, not a fill container. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame__mat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* `--target-ratio` is set inline per-frame from FrameSlot.targetRatio. */
+  aspect-ratio: var(--target-ratio, 1);
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.frame__viewport {
+  position: relative;
+  flex: 1 1 auto;
+  overflow: hidden;
+  border-radius: inherit;
+  background: #15140f; /* instant placeholder before dominantColor/img paint */
+}
+
+/* --- Captions: creative text on every frame style, not just Polaroid --
+   Default treatment is an overlay scrim across the bottom of the photo/
+   video itself; Polaroid overrides this back to its classic dedicated
+   strip below the photo. Each style gets its own typography so a
+   caption reads as part of that frame's material, not a generic label. */
+.frame__caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  margin: 0;
+  padding: 10px 14px 12px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0));
+  color: #f5f1e8;
+  font-size: clamp(11px, 1.1vw, 15px);
+  line-height: 1.25;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.frame__caption[hidden] {
+  display: none !important;
+}
+
+.frame__layer {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  will-change: opacity;
+}
+
+.frame__layer.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.frame__layer img,
+.frame__layer video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform-origin: center;
+  backface-visibility: hidden;
+}
+
+/* --- Ken-Burns pan/zoom variants (photos only — nearly free on TV GPUs,
+   this is what makes the *whole* wall feel alive even though only a
+   couple of frames are ever truly decoding video, see §5.2) ------------ */
+@keyframes kenburns-a {
+  from { transform: scale(1) translate(0, 0); }
+  to   { transform: scale(1.12) translate(-2%, -1.5%); }
+}
+@keyframes kenburns-b {
+  from { transform: scale(1.12) translate(2%, 1.5%); }
+  to   { transform: scale(1) translate(0, 0); }
+}
+@keyframes kenburns-c {
+  from { transform: scale(1) translate(0, 0); }
+  to   { transform: scale(1.15) translate(2.5%, -2%); }
+}
+@keyframes kenburns-d {
+  from { transform: scale(1.08) translate(-1.5%, 2%); }
+  to   { transform: scale(1.18) translate(1.5%, -1%); }
+}
+
+.frame__layer img.kb-a { animation: kenburns-a 16s ease-in-out both; }
+.frame__layer img.kb-b { animation: kenburns-b 17s ease-in-out both; }
+.frame__layer img.kb-c { animation: kenburns-c 18s ease-in-out both; }
+.frame__layer img.kb-d { animation: kenburns-d 20s ease-in-out both; }
+
+/* --- Style: Gold Ornate — engraved-plaque italic serif, centered ------- */
+.frame-style--gold-ornate .frame__mat {
+  padding: 16px;
+  background: linear-gradient(135deg, #e8c974 0%, #a9812f 35%, #7c5c1e 60%, #dcb968 100%);
+  box-shadow:
+    inset 0 0 0 3px #5b430f,
+    inset 0 0 0 7px #f0dca0,
+    inset 0 0 0 9px #5b430f,
+    0 14px 30px rgba(0, 0, 0, 0.55);
+  border-radius: 3px;
+}
+
+.frame-style--gold-ornate .frame__caption {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #fff3d6;
+}
+
+/* --- Style: Walnut Wood — warm, hand-labeled serif, left-aligned ------- */
+.frame-style--walnut-wood .frame__mat {
+  padding: 18px;
+  background:
+    repeating-linear-gradient(100deg, rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.1) 2px, transparent 2px, transparent 7px),
+    linear-gradient(160deg, #6b4226, #3f2612 70%, #2b1a0c);
+  box-shadow:
+    inset 0 0 0 2px #1c0f05,
+    inset 0 0 0 5px #4a2c14,
+    0 14px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.frame-style--walnut-wood .frame__caption {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-weight: 600;
+  text-align: left;
+  color: #f6e9d8;
+}
+
+/* --- Style: Polaroid — classic handwritten caption strip below photo -- */
+.frame-style--polaroid .frame__mat {
+  padding: 18px 18px 0 18px;
+  background: #faf6ef;
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
+.frame-style--polaroid .frame__caption {
+  position: static;
+  background: none;
+  flex: 0 0 auto;
+  padding: 10px 6px 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: clamp(11px, 1vw, 15px);
+  color: #4a4438;
+  text-align: center;
+}
+
+/* --- Style: Modern Metal — minimalist museum-placard sans, right-aligned */
+.frame-style--modern-metal .frame__mat {
+  padding: 6px;
+  background: linear-gradient(160deg, #d8dadd, #9aa0a6 45%, #6d7278);
+  box-shadow:
+    inset 0 0 0 1px #4b4f54,
+    0 10px 22px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.frame-style--modern-metal .frame__caption {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: clamp(9px, 0.85vw, 12px);
+  text-align: right;
+  color: #eef1f3;
+  background: linear-gradient(to top, rgba(20, 22, 24, 0.75), rgba(20, 22, 24, 0));
+}
+
+/* --- Style: Filmstrip — typewriter/timecode monospace, bottom-left ---- */
+.frame-style--filmstrip .frame__mat {
+  padding: 22px 10px;
+  background: #111;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.55);
+  border-radius: 2px;
+}
+
+.frame-style--filmstrip .frame__caption {
+  font-family: "SF Mono", "Menlo", "Courier New", monospace;
+  font-size: clamp(9px, 0.8vw, 12px);
+  letter-spacing: 0.03em;
+  color: #d8f5c8;
+}
+
+.frame-style--filmstrip .frame__caption::before {
+  content: "▶ ";
+}
+
+.frame-style--filmstrip .frame__mat::before,
+.frame-style--filmstrip .frame__mat::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 16px;
+  background-image: radial-gradient(circle, #2b2b2b 0 4px, transparent 4px);
+  background-size: 24px 16px;
+  background-repeat: repeat-x;
+  background-position: 8px center;
+  z-index: 2;
+}
+
+.frame-style--filmstrip .frame__mat::before {
+  top: 4px;
+}
+
+.frame-style--filmstrip .frame__mat::after {
+  bottom: 4px;
+}

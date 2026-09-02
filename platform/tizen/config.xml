@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Tizen TV web app packaging manifest template for Momento.
+
+  This is a starting point, not a final manifest — Tizen Studio (or the CLI
+  `tizen` tool) generates/validates the real `id`/`package` values against
+  your signing certificate profile when you create the actual project.
+  Copy `apps/tv-app/dist` into a Tizen Studio "Web Application" project's
+  content and merge the relevant bits of this file into the generated
+  config.xml.
+
+  Important: Tizen has no public "register as the system screensaver"
+  category — this app installs and runs like any other TV app. It uses
+  `webapis.appcommon.setScreenSaver()` at runtime (see
+  src/platform/tizen.ts) to suppress the TV's own burn-in screensaver
+  while active. See docs/ARCHITECTURE.md §1/§5.6.
+-->
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:tizen="http://tizen.org/ns/widgets"
+        id="https://momento.app/tizen/momento-tv"
+        version="0.1.0"
+        viewmodes="fullscreen">
+  <tizen:application id="XXXXXXXXXX.MomentoTV"
+                      package="XXXXXXXXXX"
+                      required_version="6.0"/>
+
+  <name>Momento</name>
+  <content src="index.html"/>
+  <icon src="icon.png"/>
+
+  <!-- TV-only web app; adjust if targeting other Tizen device profiles. -->
+  <tizen:profile name="tv-samsung"/>
+
+  <tizen:setting screen-orientation="landscape"
+                 context-menu="disable"
+                 background-support="disable"
+                 encryption="disable"
+                 install-location="auto"
+                 hwkey-event="enable"/>
+
+  <feature name="http://tizen.org/feature/screen.size.all"/>
+
+  <!--
+    Privileges: none required for the current prototype (plain <video>/
+    <img> elements, standard keydown events). Add these if/when you adopt
+    Tizen-specific playback (AVPlay) or other Samsung Product APIs, e.g.:
+      <tizen:privilege name="http://tizen.org/privilege/tv.avplay"/>
+    Consult Tizen Studio's privilege checker before submission — required
+    privileges can change between Tizen versions.
+  -->
+</widget>
